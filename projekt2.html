@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>calculator</title>  
+</head>
+
+<body>
+
+<input type="number" id="cislo1" placeholder="First number">
+<input type="number" id="cislo2" placeholder="Second number">
+<button onclick="scitavanie()" >+</button>
+<button onclick="odcitavanie()" >-</button>
+<button onclick="delenie()" >÷</button>
+<button onclick="nasobenie()" >x</button>
+<p>Result: <span id="vysledok"></span></p>
+
+
+<script>
+function scitavanie () {
+    let a = document.getElementById("cislo1").value;
+    let b = document.getElementById("cislo2").value;
+
+    a = parseFloat(a);
+    b = parseFloat(b);
+
+    let vysledok = a + b;
+
+    document.getElementById("vysledok").textContent = vysledok;
+        }
+</script>
+
+
+</body>
+</html>
