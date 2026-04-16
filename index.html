@@ -26,6 +26,40 @@ function scitavanie () {
 
     document.getElementById("vysledok").textContent = vysledok;
         }
+function odcitavanie () {
+    let a = document.getElementById("cislo1").value;
+    let b = document.getElementById("cislo2").value;
+
+    a = parseFloat(a);
+    b = parseFloat(b);
+
+    let vysledok = a - b;
+
+    document.getElementById("vysledok").textContent = vysledok;
+        
+}
+function nasobenie () {
+    let a = document.getElementById("cislo1").value;
+    let b = document.getElementById("cislo2").value;
+
+    a = parseFloat(a);
+    b = parseFloat(b);
+
+    let vysledok = a * b;
+
+    document.getElementById("vysledok").textContent = vysledok;
+        }
+function delenie () {
+    let a = document.getElementById("cislo1").value;
+    let b = document.getElementById("cislo2").value;
+
+    a = parseFloat(a);
+    b = parseFloat(b);
+
+    let vysledok = a / b;
+
+    document.getElementById("vysledok").textContent = vysledok;
+        }
 </script>
 
 
